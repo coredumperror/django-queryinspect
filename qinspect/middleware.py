@@ -140,6 +140,7 @@ class QueryInspectMiddleware(MiddlewareMixin):
 
         return n
 
+    @classmethod
     def check_stddev_limit(cls, infos):
         total = sum(qi.time for qi in infos)
         n = len(infos)
